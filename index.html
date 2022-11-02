@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bulb switch on and off</title>
+    <style>
+      .img{
+        height: 100px;
+      }
+
+      .btn{
+        height: 40px;
+        display: inline;
+        border: black 2px double;
+        border-radius: 5px;
+        background-color: aqua;
+        color: black;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+        function light(value)
+        {
+            var pic;
+            if(value == 0)
+            {
+                pic="off-bulb.png"
+            }
+            else
+            {
+                pic="on-bulb.png";
+            }
+            document.getElementById('my-img').src=pic;
+        }
+    </script>
+   
+</head>
+<body>
+    <img src="off-bulb.png" id="my-img">
+    <br>
+    <button class="btn" onclick="light(1)">TURN ON</button>
+    <button class="btn" onclick="light(0)">TURN OFF</button>
+
+   
+     
+</body>
+</html>
